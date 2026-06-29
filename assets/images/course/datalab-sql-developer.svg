@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="710" height="488" viewBox="0 0 710 488" role="img" aria-label="SQL Developer course cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C"/>
+      <stop offset="0.55" stop-color="#0F3D6E"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.2" fill="#FFFFFF" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="710" height="488" fill="url(#bg)"/>
+  <rect width="710" height="488" fill="url(#dots)"/>
+
+  <!-- Database icon -->
+  <g transform="translate(420 70)" opacity="0.96">
+    <rect x="0" y="0" width="232" height="184" rx="18" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <g transform="translate(58 32)">
+      <ellipse cx="58" cy="20" rx="58" ry="18" fill="#A7F3D0" fill-opacity="0.20" stroke="#A7F3D0" stroke-opacity="0.55" stroke-width="2"/>
+      <path d="M0 20 V96 C0 106 26 114 58 114 C90 114 116 106 116 96 V20" fill="#A7F3D0" fill-opacity="0.10" stroke="#A7F3D0" stroke-opacity="0.45" stroke-width="2"/>
+      <path d="M0 44 C0 54 26 62 58 62 C90 62 116 54 116 44" fill="none" stroke="#A7F3D0" stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M0 68 C0 78 26 86 58 86 C90 86 116 78 116 68" fill="none" stroke="#A7F3D0" stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M0 92 C0 102 26 110 58 110 C90 110 116 102 116 92" fill="none" stroke="#A7F3D0" stroke-opacity="0.35" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Query lines -->
+  <g transform="translate(56 84)" opacity="0.95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+    <rect x="0" y="0" width="312" height="170" rx="18" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="22" y="46" font-size="16" fill="#E5E7EB" opacity="0.95">SELECT</text>
+    <text x="88" y="46" font-size="16" fill="#86EFAC" opacity="0.95">*</text>
+    <text x="110" y="46" font-size="16" fill="#E5E7EB" opacity="0.95">FROM</text>
+    <text x="164" y="46" font-size="16" fill="#93C5FD" opacity="0.95">students</text>
+    <text x="22" y="78" font-size="16" fill="#E5E7EB" opacity="0.95">JOIN</text>
+    <text x="70" y="78" font-size="16" fill="#93C5FD" opacity="0.95">courses</text>
+    <text x="132" y="78" font-size="16" fill="#E5E7EB" opacity="0.95">ON</text>
+    <text x="164" y="78" font-size="16" fill="#E5E7EB" opacity="0.95">...</text>
+    <text x="22" y="110" font-size="16" fill="#E5E7EB" opacity="0.95">WHERE</text>
+    <text x="86" y="110" font-size="16" fill="#E5E7EB" opacity="0.95">skill</text>
+    <text x="132" y="110" font-size="16" fill="#E5E7EB" opacity="0.95">=</text>
+    <text x="148" y="110" font-size="16" fill="#FDE68A" opacity="0.95">'SQL'</text>
+  </g>
+
+  <!-- Title card -->
+  <g filter="url(#shadow)">
+    <rect x="52" y="282" width="606" height="150" rx="22" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.18"/>
+  </g>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial" fill="#FFFFFF">
+    <text x="86" y="340" font-size="44" font-weight="800" letter-spacing="0.4">SQL Developer</text>
+    <text x="86" y="380" font-size="18" opacity="0.88">Queries, joins, indexing, and performance basics</text>
+    <g transform="translate(86 402)" opacity="0.9">
+      <rect x="0" y="0" width="128" height="34" rx="10" fill="#86EFAC" fill-opacity="0.14" stroke="#86EFAC" stroke-opacity="0.35"/>
+      <text x="16" y="23" font-size="14" font-weight="700" fill="#DCFCE7">Datalab Academy</text>
+    </g>
+  </g>
+</svg>

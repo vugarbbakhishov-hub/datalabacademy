@@ -1,0 +1,61 @@
+Options -MultiViews
+RewriteEngine On
+
+# Private application data must never be served directly.
+RewriteRule ^api/backups/ - [F,L]
+RewriteRule ^(?:database\.sql|api/config\.local\.php)$ - [F,L,NC]
+
+# Köhnə template faylları — birbaşa access bağlı
+RewriteRule ^mail\.php$ - [F,L]
+RewriteRule ^seed-detailpage\.php$ - [F,L]
+
+# Dinamik sitemap — sitemap.xml sorğusu sitemap.php-yə yönləndirilir
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Keep old About links clean after converting the page to PHP.
+RewriteCond %{REQUEST_URI} ^(.*/)about\.html$ [NC]
+RewriteRule ^about\.html$ %1about [R=301,L]
+
+# Keep old Blog links clean after converting the page to PHP.
+RewriteCond %{REQUEST_URI} ^(.*/)blog-with-sidebar\.html$ [NC]
+RewriteRule ^blog-with-sidebar\.html$ %1blog-with-sidebar [R=301,L]
+
+# Keep old Blog detail links clean after converting the page to PHP.
+RewriteCond %{REQUEST_URI} ^(.*/)blog-details\.html$ [NC]
+RewriteRule ^blog-details\.html$ %1blog-details [R=301,L]
+
+# Keep old course detail links clean after converting the page to PHP.
+RewriteCond %{REQUEST_URI} ^(.*/)course-details-3\.html$ [NC]
+RewriteRule ^course-details-3\.html$ %1course-details-3 [R=301,L]
+
+# Keep old lesson links clean after converting the page to PHP.
+RewriteCond %{REQUEST_URI} ^(.*/)lesson\.html$ [NC]
+RewriteRule ^lesson\.html$ %1lesson [R=301,L]
+
+# Route the old template dashboard to the live student panel.
+RewriteCond %{REQUEST_URI} ^(.*/)student-dashboard\.html$ [NC]
+RewriteRule ^student-dashboard\.html$ %1student-dashboard [R=301,L]
+
+# Stream Drive videos through the same-origin PHP proxy.
+RewriteRule ^video-proxy/?$ video-proxy.php [END,QSA]
+
+# Hide PHP extensions for public pages.
+RewriteCond %{REQUEST_URI} !/api/ [NC]
+RewriteCond %{REQUEST_URI} ^(.+)\.php$ [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Keep existing files and folders reachable.
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [END]
+
+# Serve extensionless URLs from matching PHP files.
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [END,QSA]

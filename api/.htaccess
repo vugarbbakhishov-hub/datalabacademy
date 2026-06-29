@@ -1,0 +1,23 @@
+# api/ qovluğundakı həssas faylları birbaşa HTTP girişdən qoru.
+# Bu fayllar PHP tərəfindən require ilə yüklənir — birbaşa brauzerdən çağırılmamalıdır.
+# (Apache 2.4 sintaksisi)
+
+<FilesMatch "(?i)\.(local\.php|bak|sql|sqlite|swp|swo|ini|log|json)$">
+    Require all denied
+</FilesMatch>
+
+<Files "config.local.php">
+    Require all denied
+</Files>
+
+<Files "config.php">
+    Require all denied
+</Files>
+
+# Diaqnostika endpoint-i — productionda bağlı (lazım olsa config.local.php-də DL_DBCHECK_TOKEN təyin et)
+<Files "db-check.php">
+    Require all denied
+</Files>
+
+# backups alt-qovluğu
+RedirectMatch 404 ^.*/api/backups/.*$

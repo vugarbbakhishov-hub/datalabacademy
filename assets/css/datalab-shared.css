@@ -1,0 +1,1828 @@
+.datalab-header .rbt-header-middle {
+    border-bottom: 1px solid #edf0f7;
+}
+
+.datalab-header .mainmenu {
+    gap: 4px;
+}
+
+.datalab-header .mainmenu > li > a {
+    font-weight: 600;
+}
+
+.datalab-header .submenu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.datalab-header .header-left {
+    flex: 0 0 auto;
+    min-width: 250px;
+}
+
+.datalab-header .header-left .logo a,
+.datalab-footer .footer-widget .logo a {
+    display: block;
+    width: 250px;
+    height: 44px;
+    overflow: visible;
+}
+
+.datalab-header .header-left .logo img.datalab-logo,
+.datalab-footer .footer-widget .logo img.datalab-logo {
+    width: 250px !important;
+    height: 44px !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    transform: none !important;
+}
+
+.datalab-mobile-toggle {
+    display: none;
+}
+
+.datalab-header .datalab-mobile-panel,
+.datalab-mobile-panel {
+    display: none !important;
+    padding: 18px 0;
+    border-top: 1px solid #edf0f7;
+    flex-basis: 100%;
+}
+
+.datalab-header .datalab-mobile-panel.is-open,
+.datalab-mobile-panel.is-open {
+    display: none !important;
+}
+
+.datalab-mobile-panel a {
+    display: block;
+    padding: 10px 0;
+    font-weight: 600;
+    color: #192335;
+}
+
+.rbt-minicart-wrapper .minicart-item {
+    display: grid !important;
+    grid-template-columns: 64px 1fr 34px;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 0 !important;
+    border-bottom: 1px solid #edf0f7;
+}
+
+.rbt-minicart-wrapper .minicart-item .thumbnail,
+.rbt-minicart-wrapper .minicart-item .thumbnail a {
+    width: 64px !important;
+    height: 64px !important;
+    display: block;
+}
+
+.rbt-minicart-wrapper .minicart-item .thumbnail img {
+    width: 64px !important;
+    height: 64px !important;
+    object-fit: contain;
+    background: #0d1428;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.rbt-minicart-wrapper .minicart-item .product-content {
+    min-width: 0;
+}
+
+.rbt-minicart-wrapper .minicart-item .product-content .title {
+    margin: 0 0 4px;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.rbt-minicart-wrapper .minicart-item .product-content .quantity {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.rbt-minicart-wrapper .minicart-item .close-btn .rbt-round-btn {
+    width: 30px;
+    height: 30px;
+}
+
+.datalab-mini-cart-empty {
+    display: none;
+    padding: 28px 16px;
+    text-align: center;
+    color: var(--color-body);
+    font-weight: 500;
+}
+
+a.rbt-btn.disabled,
+a.rbt-btn[aria-disabled="true"] {
+    opacity: 0.55;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.rbt-card-bottom {
+    gap: 12px;
+}
+
+.datalab-card-cart {
+    color: var(--color-primary, #2f57ef) !important;
+}
+
+.datalab-card-cart i {
+    margin-left: 6px;
+}
+
+.datalab-card-cart:focus-visible,
+.js-course-open:focus-visible,
+.dl-nm-btn-grad:focus-visible,
+.dl-nm-btn-outline:focus-visible {
+    outline: 3px solid rgba(47, 87, 239, 0.25);
+    outline-offset: 3px;
+}
+
+.datalab-cart-trigger {
+    position: relative;
+}
+
+.datalab-cart-trigger { position: relative; }
+
+/* Pulsuz kurs nişanları */
+.dl-online-card .rbt-card-img { position: relative; }
+.dl-free-ribbon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(22, 163, 74, .35);
+}
+.dl-free-badge {
+    display: inline-block;
+    background: #16a34a;
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 5px 14px;
+    border-radius: 9px;
+    letter-spacing: .3px;
+}
+.datalab-cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    color: #fff;
+    background: #ef4444;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.datalab-cart-table .pro-thumbnail img {
+    width: 86px;
+    height: 64px;
+    object-fit: contain;
+    background: #0d1428;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.datalab-cart-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.datalab-cart-empty {
+    display: none;
+    padding: 54px 24px;
+    text-align: center;
+    border: 1px solid #edf0f7;
+    border-radius: 12px;
+    background: #fbfcff;
+}
+
+.datalab-cart-empty.is-visible {
+    display: block;
+}
+
+.datalab-cart-empty i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    color: var(--color-primary, #2f57ef);
+    background: rgba(47, 87, 239, 0.08);
+    font-size: 28px;
+}
+
+.datalab-cart-empty h4 {
+    margin-bottom: 8px;
+}
+
+.datalab-cart-table .pro-qty input[readonly] {
+    cursor: default;
+    background: #f8fafc;
+}
+
+.datalab-cart-table tr.is-removing {
+    opacity: 0;
+    transform: translateX(12px);
+    transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.datalab-toast {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    max-width: 320px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #fff;
+    background: #192335;
+    box-shadow: 0 14px 40px rgba(25, 35, 53, 0.22);
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.datalab-toast.is-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.datalab-lesson-player {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: min(68vh, 760px);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    color: #fff;
+    background: #111827;
+}
+
+/* Video başlamazdan əvvəl branded intro (DatalabAcademy logosu) */
+.dl-video-intro {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(135deg, #0f1b3d 0%, #243b8f 55%, #5b3b9b 100%);
+    transition: opacity .6s ease, visibility .6s ease;
+}
+.dl-video-intro.is-out { opacity: 0; visibility: hidden; }
+.dl-video-intro-inner { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; padding: 20px; }
+.dl-video-intro-logo {
+    width: min(300px, 62%);
+    max-width: 320px;
+    opacity: 0;
+    transform: scale(.82) translateY(10px);
+    animation: dlIntroLogo 1.1s cubic-bezier(.2, .8, .2, 1) forwards;
+    /* rəngli logonu tünd fon üçün təmiz ağ et — ayrıca ağ fayl lazım deyil */
+    filter: brightness(0) invert(1) drop-shadow(0 8px 24px rgba(0, 0, 0, .45));
+}
+@keyframes dlIntroLogo {
+    0% { opacity: 0; transform: scale(.82) translateY(10px); }
+    60% { opacity: 1; transform: scale(1.03) translateY(0); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.dl-video-intro-bar { width: 170px; height: 4px; border-radius: 99px; background: rgba(255, 255, 255, .18); overflow: hidden; }
+.dl-video-intro-bar span {
+    display: block; height: 100%; width: 0;
+    background: linear-gradient(90deg, #5ea0ff, #c08bff);
+    border-radius: 99px;
+    animation: dlIntroBar 2.4s ease forwards;
+    animation-delay: .25s;
+}
+@keyframes dlIntroBar { from { width: 0; } to { width: 100%; } }
+
+.datalab-lesson-player iframe,
+.datalab-lesson-player video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #111827;
+}
+
+.datalab-lesson-player video {
+    object-fit: contain;
+}
+
+.datalab-video-shell {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111827;
+}
+
+.datalab-video-shell iframe {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.datalab-video-shell.is-youtube iframe {
+    pointer-events: none;
+}
+
+.datalab-video-shell.is-youtube::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    height: clamp(118px, 15vw, 190px);
+    background: linear-gradient(180deg, #0f172a 0%, #0f172a 42%, rgba(15, 23, 42, 0.88) 68%, rgba(15, 23, 42, 0) 100%);
+    pointer-events: none;
+}
+
+.datalab-video-shell.is-youtube::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    height: clamp(72px, 9vw, 120px);
+    background: linear-gradient(0deg, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.72) 48%, rgba(15, 23, 42, 0) 100%);
+    pointer-events: none;
+}
+
+.datalab-video-shell video {
+    cursor: pointer;
+}
+
+.datalab-video-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, #2f57ef, #b966e7);
+    box-shadow: 0 18px 50px rgba(47, 87, 239, 0.36);
+    transform: translate(-50%, -50%);
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.datalab-video-center i {
+    font-size: 32px;
+    transform: translateX(2px);
+}
+
+.datalab-video-shell.is-playing .datalab-video-center {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.92);
+    pointer-events: none;
+}
+
+.datalab-video-shell:hover .datalab-video-center,
+.datalab-video-shell:focus-within .datalab-video-center {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.datalab-video-shell.is-playing:hover .datalab-video-center,
+.datalab-video-shell.is-playing:focus-within .datalab-video-center {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.datalab-video-controls {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    z-index: 6;
+    display: grid;
+    grid-template-columns: 40px 44px 44px auto 1fr auto 128px 40px;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+    color: #fff;
+    background: rgba(17, 24, 39, 0.78);
+    backdrop-filter: blur(10px);
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.datalab-video-controls button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.datalab-video-controls button:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.datalab-video-controls button span {
+    min-width: auto;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+}
+
+.datalab-video-controls span {
+    min-width: 44px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.datalab-video-progress-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.datalab-video-controls input[type="range"],
+.datalab-video-progress-wrap input[type="range"] {
+    width: 100%;
+    accent-color: #2f57ef;
+}
+
+.datalab-video-progress-wrap input[type="range"] {
+    cursor: pointer;
+}
+
+.datalab-video-progress-hover {
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    z-index: 2;
+    display: none;
+    min-width: auto !important;
+    padding: 5px 8px;
+    border-radius: 6px;
+    color: #fff !important;
+    background: rgba(15, 23, 42, 0.94);
+    font-size: 12px !important;
+    line-height: 1;
+    transform: translateX(-50%);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.datalab-video-progress-wrap.is-hovering .datalab-video-progress-hover {
+    display: block;
+}
+
+.datalab-video-shell.is-playing.is-idle {
+    cursor: none;
+}
+
+.datalab-video-shell.is-playing.is-idle .datalab-video-controls,
+.datalab-video-shell.is-playing.is-idle .datalab-video-center {
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+}
+
+.datalab-video-shell.is-playing.is-idle .datalab-video-center {
+    transform: translate(-50%, -50%) scale(0.92);
+}
+
+.datalab-video-volume {
+    display: grid;
+    grid-template-columns: 36px 76px;
+    gap: 8px;
+    align-items: center;
+}
+
+.datalab-video-volume input[type="range"] {
+    width: 76px;
+}
+
+.datalab-video-quality {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 112px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.datalab-video-quality span {
+    min-width: auto;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.datalab-video-quality select {
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 6px;
+    background: rgba(15, 23, 42, 0.72);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 0 24px 0 8px;
+}
+
+.datalab-video-error {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 78px);
+    z-index: 7;
+    display: none;
+    width: min(520px, calc(100% - 48px));
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.86);
+    background: rgba(15, 23, 42, 0.88);
+    font-size: 14px;
+    line-height: 1.45;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.datalab-video-shell.has-error .datalab-video-error {
+    display: block;
+}
+
+.datalab-video-shell {
+    border-radius: inherit;
+}
+
+.datalab-youtube-shell iframe {
+    pointer-events: none;
+}
+
+.datalab-video-shell.is-youtube::before {
+    height: 96px;
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.58) 0%, rgba(3, 7, 18, 0) 100%);
+}
+
+.datalab-video-shell.is-youtube::after {
+    height: 150px;
+    background: linear-gradient(0deg, rgba(3, 7, 18, 0.88) 0%, rgba(3, 7, 18, 0.4) 55%, rgba(3, 7, 18, 0) 100%);
+}
+
+.datalab-video-center {
+    width: clamp(58px, 7vw, 86px);
+    height: clamp(58px, 7vw, 86px);
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    box-shadow: 0 20px 55px rgba(47, 87, 239, 0.38);
+}
+
+.datalab-video-center i {
+    font-size: clamp(24px, 3vw, 36px);
+}
+
+.datalab-video-controls {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    min-height: 58px;
+    padding: 10px 12px;
+    border-color: rgba(148, 163, 184, 0.24);
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.84);
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(18px) saturate(120%);
+}
+
+.datalab-video-controls button {
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.09);
+    transition: background 160ms ease, transform 160ms ease;
+}
+
+.datalab-video-controls button:hover {
+    background: rgba(255, 255, 255, 0.17);
+    transform: translateY(-1px);
+}
+
+.datalab-video-controls button i {
+    font-size: 17px;
+}
+
+.datalab-video-controls button span,
+.datalab-video-controls span {
+    min-width: 0;
+    white-space: nowrap;
+}
+
+.datalab-video-controls [data-video-current],
+.datalab-video-controls [data-video-duration] {
+    flex: 0 0 42px;
+    min-width: 42px;
+    text-align: center;
+}
+
+.datalab-video-progress-wrap {
+    flex: 1 1 160px;
+    min-width: 90px;
+}
+
+.datalab-video-progress-wrap input[type="range"],
+.datalab-video-controls input[type="range"] {
+    height: 4px;
+}
+
+.datalab-video-quality {
+    flex: 0 0 auto;
+    min-width: 118px;
+    max-width: 150px;
+    margin-left: 2px;
+}
+
+.datalab-video-quality select {
+    max-width: 86px;
+}
+
+.datalab-video-volume {
+    flex: 0 0 auto;
+}
+
+.datalab-video-shell.is-playing.is-idle .datalab-video-controls {
+    transform: translateY(16px);
+}
+
+.datalab-video-shell.is-compact .datalab-video-controls {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    gap: 8px;
+    min-height: 54px;
+    padding: 8px 10px;
+}
+
+.datalab-video-shell.is-compact .datalab-video-controls button {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+}
+
+.datalab-video-shell.is-compact .datalab-video-controls [data-video-current],
+.datalab-video-shell.is-compact .datalab-video-controls [data-video-duration],
+.datalab-video-shell.is-compact .datalab-video-quality span,
+.datalab-video-shell.is-compact .datalab-video-volume {
+    display: none;
+}
+
+.datalab-video-shell.is-compact .datalab-video-progress-wrap {
+    flex: 1 1 auto;
+    min-width: 72px;
+}
+
+.datalab-video-shell.is-compact .datalab-video-quality {
+    min-width: 74px;
+    max-width: 78px;
+}
+
+.datalab-video-shell.is-compact .datalab-video-quality select {
+    width: 78px;
+    max-width: 78px;
+    padding: 0 20px 0 8px;
+}
+
+.datalab-video-shell.is-tight .datalab-video-controls {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    gap: 6px;
+    padding: 7px;
+}
+
+.datalab-video-shell.is-tight .datalab-video-controls button {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.datalab-video-shell.is-tight .datalab-video-quality {
+    display: none;
+}
+
+.datalab-video-shell:fullscreen,
+.datalab-video-shell:-webkit-full-screen {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    background: #000;
+}
+
+.datalab-video-shell:fullscreen .datalab-video-controls,
+.datalab-video-shell:-webkit-full-screen .datalab-video-controls {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: none;
+}
+
+.datalab-player-loading {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.datalab-player-loading::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: datalabSpin 850ms linear infinite;
+}
+
+@keyframes datalabSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1199px) {
+    .datalab-header .mainmenu-nav,
+    .datalab-header .rbt-header-center,
+    .datalab-header .account-access {
+        display: none !important;
+    }
+
+    .datalab-mobile-toggle {
+        display: inline-flex;
+    }
+
+    .datalab-header .datalab-mobile-panel.is-open,
+    .datalab-mobile-panel.is-open {
+        display: block !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .datalab-header .header-left .logo a,
+    .datalab-header .header-left .logo img.datalab-logo,
+    .datalab-footer .footer-widget .logo a,
+    .datalab-footer .footer-widget .logo img.datalab-logo {
+        width: 210px !important;
+        height: 38px !important;
+    }
+
+    .datalab-cart-actions .rbt-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .datalab-lesson-player {
+        min-height: 260px;
+    }
+
+    .datalab-video-controls {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        display: flex;
+        gap: 7px;
+        min-height: 50px;
+        padding: 8px;
+    }
+
+    .datalab-video-controls [data-video-current],
+    .datalab-video-controls [data-video-duration],
+    .datalab-video-volume,
+    .datalab-video-quality span {
+        display: none;
+    }
+
+    .datalab-video-quality {
+        min-width: 68px;
+        max-width: 72px;
+    }
+
+    .datalab-video-quality select {
+        max-width: 72px;
+        padding-left: 7px;
+    }
+
+    .datalab-video-controls button {
+        flex-basis: 34px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .datalab-video-center {
+        width: 62px;
+        height: 62px;
+    }
+
+    .rbt-card-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .rbt-card-bottom .rbt-btn-link {
+        justify-content: center;
+        min-height: 42px;
+        padding: 8px 10px;
+        border-radius: 8px;
+        background: #f7f8ff;
+    }
+
+    .dl-nm-actions {
+        flex-direction: column;
+    }
+
+    .dl-nm-actions a,
+    .dl-nm-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .rbt-cart-area .table {
+        min-width: 720px;
+    }
+
+    .rbt-cart-area .table-responsive,
+    .cart-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .datalab-toast {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        max-width: none;
+    }
+}
+
+/* Homepage sticky header switchers */
+.datalab-sticky-switchers {
+    display: none;
+    align-items: center;
+    gap: 28px;
+    margin-left: 26px;
+    white-space: nowrap;
+}
+
+.rbt-header .rbt-header-wrapper.rbt-sticky .datalab-sticky-switchers {
+    display: inline-flex;
+}
+
+.datalab-sticky-switchers .header-info {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+.datalab-sticky-switchers .rbt-dropdown-menu {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.datalab-sticky-switchers .rbt-dropdown-menu > li {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+.datalab-sticky-switchers .rbt-dropdown-menu > li > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 0;
+    color: #64748b;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow: none;
+}
+
+.datalab-sticky-switchers .rbt-dropdown-menu > li > a:hover {
+    color: #2f57ef;
+}
+
+.datalab-sticky-switchers .right-icon {
+    margin: 0;
+    font-size: 18px;
+}
+
+.datalab-sticky-switchers .rbt-dropdown-menu .sub-menu {
+    top: 100%;
+    right: 0;
+    left: auto;
+    min-width: 150px;
+}
+
+.active-dark-mode .datalab-sticky-switchers .rbt-dropdown-menu > li > a {
+    color: #f1f5f9;
+}
+
+.active-dark-mode .datalab-sticky-switchers .rbt-dropdown-menu > li > a:hover {
+    color: #8fa4ff;
+}
+
+@media (max-width: 1399px) {
+    .datalab-sticky-switchers {
+        gap: 20px;
+        margin-left: 20px;
+    }
+
+    .datalab-sticky-switchers .rbt-dropdown-menu > li > a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .datalab-sticky-switchers {
+        display: none !important;
+    }
+}
+
+/* Homepage certificate cards */
+.datalab-certificate-area .section-title .description {
+    width: min(640px, 100%);
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+.datalab-certificate-shell {
+    position: relative;
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr) 46px;
+    align-items: center;
+    gap: 14px;
+}
+
+.datalab-certificate-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    padding: 0 2px 18px;
+}
+
+.datalab-certificate-track::-webkit-scrollbar {
+    height: 8px;
+}
+
+.datalab-certificate-track::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(47, 87, 239, 0.28);
+}
+
+.datalab-certificate-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #d9e1f2;
+    border-radius: 999px;
+    background: #fff;
+    color: #2f57ef;
+    box-shadow: 0 12px 30px rgba(25, 35, 53, 0.08);
+    transition: all 0.2s ease;
+}
+
+.datalab-certificate-nav:hover {
+    border-color: transparent;
+    background: #2f57ef;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.datalab-certificate-card {
+    flex: 0 0 min(530px, calc(100vw - 96px));
+    scroll-snap-align: start;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #edf0f7;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(25, 35, 53, 0.08);
+}
+
+.datalab-certificate-preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    padding: 14px;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    border-bottom: 1px solid #edf0f7;
+}
+
+.datalab-certificate-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(25, 35, 53, 0.12);
+}
+
+.datalab-certificate-content {
+    padding: 28px;
+}
+
+.datalab-certificate-tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    margin-bottom: 14px;
+    padding: 5px 14px;
+    border-radius: 999px;
+    color: #2f57ef;
+    background: rgba(47, 87, 239, 0.09);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.datalab-certificate-content h3 {
+    margin: 0 0 12px;
+    color: #192335;
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.datalab-certificate-content p {
+    margin: 0 0 24px;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.active-dark-mode .datalab-certificate-area {
+    background: #111c2e !important;
+}
+
+.active-dark-mode .datalab-certificate-area .section-title .title {
+    color: #fff;
+}
+
+.active-dark-mode .datalab-certificate-area .section-title .description {
+    color: rgba(226, 232, 240, 0.84);
+}
+
+.active-dark-mode .datalab-certificate-card {
+    border-color: rgba(255, 255, 255, 0.10) !important;
+    background: #162237 !important;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.30) !important;
+}
+
+.active-dark-mode .datalab-certificate-nav {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: #162237;
+    color: #dbe7ff;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+}
+
+.active-dark-mode .datalab-certificate-nav:hover {
+    background: #2f57ef;
+    color: #fff;
+}
+
+.active-dark-mode .datalab-certificate-preview {
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(225, 231, 246, 0.96)) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+.active-dark-mode .datalab-certificate-preview img {
+    background: #fff;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.active-dark-mode .datalab-certificate-tag {
+    color: #86a0ff;
+    background: rgba(47, 87, 239, 0.18);
+}
+
+.active-dark-mode .datalab-certificate-content h3 {
+    color: #f8fafc;
+}
+
+.active-dark-mode .datalab-certificate-content p {
+    color: rgba(226, 232, 240, 0.78);
+}
+
+.active-dark-mode .datalab-certificate-content .rbt-btn.btn-border {
+    border-color: rgba(255, 255, 255, 0.18);
+    color: #f8fafc;
+}
+
+.active-dark-mode .datalab-certificate-content .rbt-btn.btn-border:hover {
+    border-color: transparent;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    .datalab-certificate-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .datalab-certificate-nav {
+        display: none;
+    }
+
+    .datalab-certificate-card {
+        flex-basis: min(88vw, 420px);
+    }
+
+    .datalab-certificate-preview {
+        aspect-ratio: 4 / 3;
+    }
+
+    .datalab-certificate-content {
+        padding: 22px;
+    }
+
+    .datalab-certificate-content h3 {
+        font-size: 22px;
+    }
+
+    .datalab-certificate-content p {
+        font-size: 16px;
+    }
+}
+
+/* Lesson comments and approved reviews */
+.datalab-lesson-comments {
+    margin-top: 34px;
+    padding-top: 28px;
+    border-top: 1px solid #edf0f7;
+}
+
+.datalab-comments-list {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.datalab-comments-empty {
+    margin: 0;
+    padding: 16px 18px;
+    border: 1px solid #edf0f7;
+    border-radius: 8px;
+    color: #6b7280;
+    background: #f8fafc;
+}
+
+.datalab-comment-card {
+    padding: 16px 18px;
+    border: 1px solid #edf0f7;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.datalab-comment-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.datalab-comment-head strong {
+    color: #192335;
+    font-weight: 700;
+}
+
+.datalab-comment-head span {
+    color: #ff8f3c;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.datalab-comment-card p {
+    margin: 0 0 8px;
+    color: #526179;
+}
+
+.datalab-comment-card small,
+.datalab-review-lesson {
+    display: inline-flex;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.datalab-comment-form {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 120px;
+    gap: 12px;
+    padding: 18px;
+    border: 1px solid #edf0f7;
+    border-radius: 8px;
+    background: #fbfcff;
+}
+
+.datalab-comment-form input,
+.datalab-comment-form select,
+.datalab-comment-form textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    color: #192335;
+    background: #fff;
+}
+
+.datalab-comment-form textarea {
+    min-height: 110px;
+    padding-top: 14px;
+    resize: vertical;
+}
+
+.datalab-comment-form .full,
+.datalab-comment-form .datalab-comment-message {
+    grid-column: 1 / -1;
+}
+
+.datalab-comment-message {
+    margin: 0;
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.datalab-comment-message.is-error {
+    color: #dc2626;
+}
+
+.datalab-review-avatar {
+    display: grid;
+    width: 72px;
+    height: 72px;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, #2f57ef, #b966e7);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.active-dark-mode .datalab-lesson-comments {
+    border-top-color: rgba(255, 255, 255, 0.10);
+}
+
+.active-dark-mode .datalab-comments-empty,
+.active-dark-mode .datalab-comment-card,
+.active-dark-mode .datalab-comment-form {
+    border-color: rgba(255, 255, 255, 0.10);
+    background: #162237;
+}
+
+.active-dark-mode .datalab-comment-head strong,
+.active-dark-mode .datalab-comment-form input,
+.active-dark-mode .datalab-comment-form select,
+.active-dark-mode .datalab-comment-form textarea {
+    color: #f8fafc;
+}
+
+.active-dark-mode .datalab-comment-card p,
+.active-dark-mode .datalab-comments-empty,
+.active-dark-mode .datalab-comment-card small,
+.active-dark-mode .datalab-review-lesson {
+    color: rgba(226, 232, 240, 0.78);
+}
+
+.active-dark-mode .datalab-comment-form input,
+.active-dark-mode .datalab-comment-form select,
+.active-dark-mode .datalab-comment-form textarea {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: #0f1a2b;
+}
+
+@media (max-width: 767px) {
+    .datalab-comment-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra-small phones: keep header actions and course filters inside the viewport. */
+@media (max-width: 359px) {
+    .rbt-header-9 .rbt-header-wrapper .header-left {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .rbt-header-9 .rbt-header-wrapper .header-right {
+        flex: 0 0 40px;
+        width: 40px;
+        min-width: 40px;
+        margin-left: 0;
+    }
+
+    .rbt-header-9 .header-left .logo,
+    .rbt-header-9 .header-left .logo a,
+    .rbt-header-9 .header-left .logo img.datalab-logo {
+        width: 190px !important;
+        max-width: 100% !important;
+        height: 36px !important;
+    }
+
+    .rbt-header-9 .header-right .rbt-btn-wrapper {
+        display: none !important;
+    }
+
+    .rbt-header-9 .mobile-menu-bar,
+    .rbt-header-9 .hamberger {
+        width: 40px;
+        min-width: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rbt-header-9 .hamberger-button {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        margin: 0;
+    }
+
+    .rbt-course-filter-area .rbt-short-item,
+    .rbt-course-filter-area .rbt-search-style {
+        width: 100%;
+        max-width: calc(100vw - 30px);
+        min-width: 0;
+    }
+
+    .rbt-course-filter-area .rbt-search-style input {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Animated Data Analitika cover used for course id=1 cards. */
+.rbt-card-img a[data-course-id="1"] {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        radial-gradient(circle at 87% 85%, rgba(139, 72, 255, 0.68), transparent 34%),
+        radial-gradient(circle at 16% 18%, rgba(100, 230, 197, 0.18), transparent 18%),
+        linear-gradient(135deg, #0b1430 0%, #152965 48%, #6727e8 100%);
+}
+
+.rbt-card-img a[data-course-id="1"] > img {
+    opacity: 0 !important;
+}
+
+.rbt-card-img a[data-course-id="1"]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        radial-gradient(circle at 21% 24%, #63e0c6 0 1.5%, transparent 1.7%),
+        radial-gradient(circle at 30% 34%, #56a5ff 0 1.25%, transparent 1.45%),
+        radial-gradient(circle at 38% 25%, #b394ff 0 1.25%, transparent 1.45%),
+        radial-gradient(circle at 45% 42%, #ffe26f 0 1.2%, transparent 1.4%),
+        linear-gradient(28deg, transparent 19%, rgba(255,255,255,.34) 19.25%, transparent 19.8%),
+        linear-gradient(-34deg, transparent 28%, rgba(255,255,255,.26) 28.25%, transparent 28.8%),
+        linear-gradient(43deg, transparent 36%, rgba(255,255,255,.24) 36.25%, transparent 36.8%),
+        linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px);
+    background-size: auto, auto, auto, auto, auto, auto, auto, 34px 34px, 34px 34px;
+    animation: dlDataCoverFloat 5.5s ease-in-out infinite alternate;
+}
+
+.rbt-card-img a[data-course-id="1"]::after {
+    content: "Data Analitika\A Insight, visualization, and real-world tasks\A Datalab Academy";
+    white-space: pre-line;
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    bottom: 12%;
+    z-index: 2;
+    padding: clamp(13px, 4.8%, 26px) clamp(15px, 5.4%, 30px);
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.08));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 18px 45px rgba(54, 29, 148, .2);
+    backdrop-filter: blur(8px);
+    font-weight: 800;
+    font-size: clamp(20px, 7.5%, 34px);
+    line-height: 1.2;
+    text-shadow: 0 4px 18px rgba(0,0,0,.26);
+}
+
+.rbt-card-img a[data-course-id="1"]::after {
+    font-family: inherit;
+}
+
+.rbt-card-img a[data-course-id="1"] {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+}
+
+.rbt-card-img a[data-course-id="1"]:hover::before {
+    animation-duration: 2.6s;
+}
+
+@keyframes dlDataCoverFloat {
+    0% { transform: translate3d(-1.5%, -1%, 0) scale(1.02); }
+    100% { transform: translate3d(1.5%, 1%, 0) scale(1.05); }
+}
+
+/* Progress Metric Card adapted for Data Analitika course thumbnails. */
+.rbt-card-img a[data-course-id="1"].has-dl-progress-cover {
+    min-height: 190px;
+    color: #102018;
+    background: #f8fffc;
+    border: 1px solid rgba(24, 201, 154, .2);
+}
+
+.rbt-card-img a[data-course-id="1"].has-dl-progress-cover::before,
+.rbt-card-img a[data-course-id="1"].has-dl-progress-cover::after {
+    display: none;
+}
+
+.dl-progress-cover {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: block;
+    overflow: hidden;
+    border-radius: inherit;
+    background:
+        radial-gradient(circle at 88% 30%, rgba(24, 201, 154, .16), transparent 36%),
+        linear-gradient(135deg, #ffffff 0%, #f3fff9 100%);
+    font-family: inherit;
+}
+
+.dl-progress-head,
+.dl-progress-total,
+.dl-progress-footer {
+    position: absolute;
+    z-index: 3;
+}
+
+.dl-progress-head {
+    top: 9%;
+    left: 7%;
+    right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.dl-progress-label {
+    color: #14251e;
+    font-size: clamp(12px, 3.8vw, 16px);
+    font-weight: 800;
+}
+
+.dl-progress-trend {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #0ca678;
+    font-size: clamp(9px, 2.8vw, 12px);
+    font-weight: 700;
+}
+
+.dl-progress-total {
+    top: 29%;
+    left: 7%;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.dl-progress-total strong {
+    color: #071a13;
+    font-size: clamp(34px, 10vw, 58px);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.dl-progress-total small {
+    color: #5f766d;
+    font-size: clamp(9px, 2.9vw, 13px);
+    font-weight: 600;
+}
+
+.dl-progress-chart-wrap {
+    position: absolute;
+    z-index: 2;
+    right: -5%;
+    bottom: 12%;
+    width: 68%;
+    height: 66%;
+    display: block;
+    overflow: visible;
+    color: rgba(14, 116, 82, .15);
+}
+
+.dl-progress-chart {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.dl-progress-dots { opacity: .5; }
+.dl-progress-area { animation: dlProgressArea 3.2s ease-in-out infinite alternate; }
+.dl-progress-line {
+    fill: none;
+    stroke: #18c99a;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dlProgressDraw 2.2s ease forwards, dlProgressGlow 2.8s ease-in-out 2.2s infinite alternate;
+}
+
+.dl-progress-point { cursor: crosshair; outline: none; }
+.dl-progress-point-hit { fill: transparent; pointer-events: all; }
+.dl-progress-point-dot {
+    fill: #18c99a;
+    stroke: #fff;
+    stroke-width: 2.5;
+    opacity: .35;
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+.dl-progress-point:hover .dl-progress-point-dot,
+.dl-progress-point:focus .dl-progress-point-dot {
+    opacity: 1;
+    transform: scale(1.45);
+}
+
+.dl-progress-floating-tip {
+    position: absolute;
+    z-index: 8;
+    display: grid;
+    gap: 2px;
+    min-width: 86px;
+    padding: 7px 9px;
+    border: 1px solid rgba(7, 26, 19, .1);
+    border-radius: 8px;
+    color: #102018;
+    background: rgba(255, 255, 255, .98);
+    box-shadow: 0 12px 28px rgba(21, 83, 62, .16);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, calc(-100% - 10px)) scale(.96);
+    transition: opacity .16s ease, transform .16s ease;
+}
+
+.dl-progress-floating-tip::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, .98);
+    border-right: 1px solid rgba(7, 26, 19, .08);
+    border-bottom: 1px solid rgba(7, 26, 19, .08);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.dl-progress-floating-tip.is-visible {
+    opacity: 1;
+    transform: translate(-50%, calc(-100% - 14px)) scale(1);
+}
+
+.dl-progress-floating-tip strong {
+    color: #102018;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.dl-progress-floating-tip small {
+    color: #6d7f77;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.dl-progress-chart-wrap::after {
+    content: "";
+    position: absolute;
+    left: var(--dl-progress-cursor-x, 49%);
+    top: var(--dl-progress-cursor-y, 34%);
+    z-index: 7;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    background: #18c99a;
+    box-shadow: 0 0 0 5px rgba(24, 201, 154, .16);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity .16s ease, left .12s ease, top .12s ease;
+}
+
+.dl-progress-chart-wrap:hover::after,
+.dl-progress-chart-wrap:focus-within::after {
+    opacity: 1;
+}
+
+.dl-progress-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 7px 7%;
+    border-top: 1px solid rgba(16, 32, 24, .06);
+    color: #6d7f77;
+    background: rgba(255, 255, 255, .88);
+    font-size: clamp(8px, 2.3vw, 11px);
+}
+
+.dl-progress-footer b { color: #0ca678; }
+
+@keyframes dlProgressDraw { to { stroke-dashoffset: 0; } }
+@keyframes dlProgressGlow { to { filter: drop-shadow(0 0 8px rgba(24, 201, 154, .45)); } }
+@keyframes dlProgressArea { to { opacity: .65; } }
+
+@media (max-width: 575px) {
+    .rbt-card-img a[data-course-id="1"].has-dl-progress-cover { min-height: 205px; }
+    .dl-progress-chart-wrap { width: 72%; }
+}
+
+/* ===================================================================== */
+/* Animated covers for SQL (id=2) & Excel (id=3) listing/carousel cards  */
+/* ===================================================================== */
+.rbt-card-img a.has-dl-cv-cover{
+  position:relative;display:block;min-height:200px;overflow:hidden;border:0;
+  background:radial-gradient(circle at 86% 14%,rgba(24,201,154,.30),transparent 42%),radial-gradient(circle at 12% 92%,rgba(127,68,255,.40),transparent 44%),linear-gradient(140deg,#0a1020 0%,#15245a 52%,#3b1f8f 100%);
+}
+.dl-cv-cover{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;gap:9px;padding:16px;color:#eafff6;font-size:12px}
+.dl-cv-cover-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.dl-cv-cover-head b{color:#34d399;font-size:12px;font-weight:800;letter-spacing:.06em}
+.dl-cv-cover-head em{display:inline-flex;align-items:center;gap:5px;color:#9fb2d8;font-style:normal;font-size:10.5px;font-weight:600}
+.dl-cv-cover-head em svg{width:13px;height:13px}
+
+@keyframes dlCvCoverIn{0%,4%{opacity:0;transform:translateY(7px)}12%{opacity:1;transform:none}88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-4px)}}
+@keyframes dlCvCoverBar{0%,5%{height:0}17%{height:var(--h)}88%{height:var(--h)}100%{height:0}}
+@keyframes dlCvCoverCaret{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}
+
+/* SQL cover */
+.dl-cv-cover-code{flex:1;padding:10px 12px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:rgba(4,8,16,.5);font-family:Consolas,"Liberation Mono",monospace;font-size:11px;line-height:1.7;color:#cfe0ff}
+.dl-cv-cover-code .ln{display:block;opacity:0;animation:dlCvCoverIn 8s ease infinite;animation-delay:calc(var(--i)*.42s)}
+.dl-cv-cover-code .kw{color:#a78bff;font-weight:700}
+.dl-cv-cover-code .fn{color:#34d399;font-weight:700}
+.dl-cv-cover-caret{display:inline-block;width:7px;height:12px;vertical-align:-1px;background:#34d399;animation:dlCvCoverCaret 1.05s steps(1) infinite}
+.dl-cv-cover-rows{display:flex;flex-direction:column;gap:4px}
+.dl-cv-cover-rows .row{display:flex;justify-content:space-between;gap:10px;padding:4px 9px;border:1px solid rgba(255,255,255,.08);border-radius:7px;background:rgba(255,255,255,.03);font-size:11px;color:#c7d6ff;opacity:0;animation:dlCvCoverIn 8s ease infinite;animation-delay:calc(var(--i)*.42s)}
+.dl-cv-cover-rows .row b{color:#34d399;font-weight:700}
+
+/* Excel cover */
+.dl-cv-cover-cells{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.dl-cv-cover-cells .c{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:5px 8px;border:1px solid rgba(255,255,255,.10);border-radius:7px;background:rgba(255,255,255,.04);font-size:10px;opacity:0;animation:dlCvCoverIn 8s ease infinite;animation-delay:calc(var(--i)*.34s)}
+.dl-cv-cover-cells .c i{color:#8ea3cc;font-style:normal;font-family:Consolas,monospace}
+.dl-cv-cover-cells .c b{color:#eafff6;font-weight:700}
+.dl-cv-cover-bars{display:flex;align-items:flex-end;gap:7px;height:46px;margin-top:auto;padding:0 2px}
+.dl-cv-cover-bars .b{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(180deg,#34d399,#0ca678);height:0;animation:dlCvCoverBar 8s ease infinite;animation-delay:calc(var(--i)*.34s)}
+
+@media(prefers-reduced-motion:reduce){
+  .dl-cv-cover-code .ln,.dl-cv-cover-rows .row,.dl-cv-cover-cells .c{opacity:1;animation:none}
+  .dl-cv-cover-bars .b{height:var(--h);animation:none}
+  .dl-cv-cover-caret{animation:none}
+}
+/* Data Analitika progress tooltip refinements. */
+.dl-progress-chart-wrap {
+    pointer-events: auto;
+}
+
+.dl-progress-floating-tip.is-below {
+    transform: translate(-50%, 14px) scale(1);
+}
+
+.dl-progress-floating-tip.is-below::after {
+    top: -5px;
+    bottom: auto;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 1px solid rgba(7, 26, 19, .08);
+    border-top: 1px solid rgba(7, 26, 19, .08);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.dl-progress-chart-wrap.is-active::after {
+    opacity: 1;
+}
+
+.rbt-card-img a[data-course-id="1"].has-dl-progress-cover .dl-progress-floating-tip {
+    max-width: calc(100% - 18px);
+}
+/* Datalab dynamic course menu */
+.mainmenu .submenu .dl-online-menu-item {
+    position: relative;
+}
+
+.mainmenu .submenu .dl-online-menu-item > a {
+    justify-content: flex-start;
+}
+
+.mainmenu .submenu .dl-online-menu-item .dl-online-submenu-arrow {
+    margin-left: auto;
+    font-size: 13px;
+}
+
+.mainmenu .submenu .dl-online-menu-item > .dl-online-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+}
+
+.mainmenu .submenu .dl-online-menu-item:hover > .dl-online-submenu,
+.mainmenu .submenu .dl-online-menu-item:focus-within > .dl-online-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+@media (max-width: 1199px) {
+    .mainmenu .submenu .dl-online-menu-item > .dl-online-submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        min-width: 0;
+        box-shadow: none;
+        padding-left: 16px;
+    }
+}

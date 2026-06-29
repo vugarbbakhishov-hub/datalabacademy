@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DatalabAcademy | Tələbə girişi</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="DatalabAcademy tələbə hesabına daxil ol və kurs panelini idarə et.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg?v=20260622">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png?v=20260622">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/feather.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/euclid-circulara.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/datalab-auth.css?v=20260619-theme-stable">
+</head>
+
+<body class="datalab-auth-page" data-student-auth>
+    <button class="datalab-auth-theme-toggle" type="button" data-auth-theme-toggle
+        aria-label="Qaranlıq rejimə keç" title="Qaranlıq rejimə keç">
+        <i class="feather-moon" data-auth-theme-icon aria-hidden="true"></i>
+    </button>
+    <main class="datalab-auth-stage" aria-label="Tələbə girişi">
+        <section class="datalab-auth-visual">
+            <a class="datalab-auth-brand" href="index.php" aria-label="DatalabAcademy">
+                <img src="assets/images/logo/datalab-logo-transparent.png" alt="DatalabAcademy">
+            </a>
+            <div class="datalab-auth-copy">
+                <span class="eyebrow"><i class="feather-zap"></i> Tələbə paneli</span>
+                <h1>Kursların, sertifikatların və nəticələrin bir yerdə.</h1>
+                <p>Daxil ol, qeydiyyatlı kurslarını izlə, tapşırıqlarına qayıt və DatalabAcademy öyrənmə yolunu davam etdir.</p>
+            </div>
+            <div class="datalab-auth-icon-grid" aria-hidden="true">
+                <span><i class="feather-bar-chart-2"></i> Analitika</span>
+                <span><i class="feather-database"></i> SQL</span>
+                <span><i class="feather-grid"></i> Excel</span>
+                <span><i class="feather-cpu"></i> AI</span>
+                <span><i class="feather-award"></i> Sertifikat</span>
+                <span><i class="feather-play-circle"></i> Dərslər</span>
+            </div>
+        </section>
+
+        <section class="datalab-auth-card">
+            <div class="datalab-auth-card-head">
+                <img src="assets/images/logo/datalab-logo-transparent.png" alt="DatalabAcademy">
+                <h2>Tələbə hesabı</h2>
+                <p>Daxil ol və ya yeni hesab yarat.</p>
+            </div>
+
+            <div class="datalab-auth-switch" role="tablist" aria-label="Auth mode">
+                <button class="is-active" type="button" data-auth-mode="login">Daxil ol</button>
+                <button type="button" data-auth-mode="register">Yeni hesab</button>
+            </div>
+
+            <div class="datalab-google-slot" data-google-auth aria-label="Google ilə davam et"></div>
+
+            <div class="datalab-auth-divider">və ya e-poçt ilə</div>
+
+            <form class="datalab-auth-form" data-auth-panel="login" data-auth-form="login" autocomplete="off">
+                <label>
+                    E-poçt
+                    <span class="datalab-auth-input">
+                        <i class="feather-mail"></i>
+                        <input name="email" type="email" required autocomplete="off" data-lpignore="true" placeholder="sen@example.com">
+                    </span>
+                </label>
+                <label>
+                    Şifrə
+                    <span class="datalab-auth-input">
+                        <i class="feather-lock"></i>
+                        <input name="password" type="password" required autocomplete="new-password" data-lpignore="true" placeholder="••••••••">
+                    </span>
+                </label>
+                <button class="datalab-auth-text-button" type="button" data-auth-mode="forgot">Şifrəni unutmusunuz?</button>
+                <button class="rbt-btn btn-gradient datalab-auth-submit" type="submit">
+                    <i class="feather-log-in"></i><span>Daxil ol</span>
+                </button>
+            </form>
+
+            <form class="datalab-auth-form" data-auth-panel="register" data-auth-form="register" autocomplete="on" hidden>
+                <label>
+                    Ad və soyad
+                    <span class="datalab-auth-input">
+                        <i class="feather-user"></i>
+                        <input name="name" type="text" required autocomplete="name" placeholder="Ad Soyad">
+                    </span>
+                </label>
+                <label>
+                    E-poçt
+                    <span class="datalab-auth-input">
+                        <i class="feather-mail"></i>
+                        <input name="email" type="email" required autocomplete="email" placeholder="sen@example.com">
+                    </span>
+                </label>
+                <label>
+                    Şifrə
+                    <span class="datalab-auth-input">
+                        <i class="feather-lock"></i>
+                        <input name="password" type="password" required autocomplete="new-password" minlength="8" placeholder="Ən azı 8 simvol">
+                    </span>
+                </label>
+                <button class="rbt-btn btn-gradient datalab-auth-submit" type="submit">
+                    <i class="feather-user-plus"></i><span>Hesab yarat</span>
+                </button>
+            </form>
+
+            <form class="datalab-auth-form" data-auth-panel="forgot" data-auth-form="request-reset" autocomplete="on" hidden>
+                <div class="datalab-auth-panel-title">
+                    <strong>Şifrəni bərpa et</strong>
+                    <span>E-poçt ünvanınızı yazın, sizə birdəfəlik bərpa linki göndərək.</span>
+                </div>
+                <label>
+                    E-poçt
+                    <span class="datalab-auth-input">
+                        <i class="feather-mail"></i>
+                        <input name="email" type="email" required autocomplete="email" placeholder="sen@example.com">
+                    </span>
+                </label>
+                <button class="rbt-btn btn-gradient datalab-auth-submit" type="submit">
+                    <i class="feather-send"></i><span>Bərpa linkini göndər</span>
+                </button>
+                <button class="datalab-auth-text-button" type="button" data-auth-mode="login">Girişə qayıt</button>
+            </form>
+
+            <p class="datalab-auth-message" data-auth-message hidden></p>
+            <button class="datalab-auth-text-button" type="button" data-resend-verification hidden>Təsdiq linkini yenidən göndər</button>
+            <a class="datalab-auth-dev-link" data-auth-dev-link href="#" hidden>Lokal test linkini aç</a>
+            <p class="datalab-auth-footnote">Hesab yaratmaqla DatalabAcademy kurs panelində şəxsi öyrənmə məlumatlarının saxlanmasına razı olursan.</p>
+        </section>
+    </main>
+
+    <script>
+        window.DL_GOOGLE_CLIENT_ID = window.DL_GOOGLE_CLIENT_ID || "503847870794-8v6ug817tvi29m7m1mhcjf3k0j8lo82l.apps.googleusercontent.com";
+    </script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="assets/js/datalab-student-auth.js?v=20260621-google-client"></script>
+</body>
+
+</html>

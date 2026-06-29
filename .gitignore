@@ -1,0 +1,40 @@
+# === Sirlər və lokal konfiqurasiya (HEÇ VAXT commit etmə) ===
+/api/config.local.php
+config.local.php
+*.local.php
+.env
+.env.*
+
+# === Database dump-ları və backup-lar ===
+/api/backups/
+*.sql
+*.sqlite
+*.sqlite3
+backup-*.json
+
+# === İstifadəçi yüklədiyi fayllar ===
+/uploads/
+/api/uploads/
+/assets/images/uploads/
+
+# === Loglar ===
+*.log
+error_log
+php_errorlog
+
+# === OS / redaktor / müvəqqəti ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+.idea/
+.vscode/
+
+# === Codex / Gemini lokal ===
+.codex/
+.gemini/

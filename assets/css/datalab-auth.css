@@ -1,0 +1,581 @@
+/* Student auth and account menu */
+
+.datalab-auth-dropdown {
+    width: 260px;
+    padding: 18px;
+    text-align: center;
+}
+
+.datalab-auth-mini-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 12px;
+    border-radius: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #2f57ef, #b45cff);
+    box-shadow: 0 10px 24px rgba(47, 87, 239, 0.28);
+}
+
+.datalab-auth-mini-icon i,
+.datalab-auth-mini-icon svg {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.datalab-auth-dropdown h6 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.datalab-auth-dropdown p {
+    margin: 0 0 16px;
+    color: #6b7280;
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+.active-dark-mode .datalab-auth-dropdown h6 {
+    color: #f8fafc;
+}
+
+.active-dark-mode .datalab-auth-dropdown p {
+    color: #aeb7c6;
+}
+
+.datalab-auth-menu-actions {
+    display: grid;
+    gap: 10px;
+}
+
+.datalab-auth-menu-actions .rbt-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.datalab-auth-menu-actions .rbt-btn i,
+.datalab-auth-menu-actions .rbt-btn svg {
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
+    line-height: 1;
+    flex: 0 0 auto;
+}
+
+.datalab-avatar-initials {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, #2f57ef, #b45cff);
+    font-weight: 800;
+}
+
+.datalab-student-profile-chip .admin-thumbnail {
+    overflow: hidden;
+}
+
+.datalab-auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    color: #192335;
+    background:
+        linear-gradient(135deg, rgba(47, 87, 239, 0.22), rgba(180, 92, 255, 0.18)),
+        #0f1731;
+}
+
+.datalab-auth-theme-toggle {
+    position: fixed;
+    top: 22px;
+    right: 22px;
+    z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 8px;
+    color: #ffffff;
+    background: rgba(15, 23, 49, 0.72);
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.24);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.datalab-auth-theme-toggle:hover {
+    color: #2f57ef;
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+.datalab-auth-theme-toggle:focus-visible {
+    outline: 3px solid rgba(47, 87, 239, 0.32);
+    outline-offset: 3px;
+}
+
+.datalab-auth-theme-toggle i {
+    font-size: 20px;
+}
+
+.datalab-auth-page.active-light-mode {
+    background:
+        linear-gradient(135deg, rgba(47, 87, 239, 0.10), rgba(180, 92, 255, 0.08)),
+        #f6f8ff;
+}
+
+.datalab-auth-page.active-light-mode .datalab-auth-theme-toggle {
+    border-color: #d9e0f0;
+    color: #192335;
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-card {
+    border-color: rgba(148, 163, 184, 0.22);
+    color: #f8fafc;
+    background: #141d33;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-card-head h2,
+.datalab-auth-page.active-dark-mode .datalab-auth-panel-title strong {
+    color: #f8fafc;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-card-head p,
+.datalab-auth-page.active-dark-mode .datalab-auth-footnote,
+.datalab-auth-page.active-dark-mode .datalab-auth-panel-title,
+.datalab-auth-page.active-dark-mode .datalab-auth-form label {
+    color: #aebbd0;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-switch {
+    background: #0e1628;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-switch button {
+    color: #aebbd0;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-switch button.is-active {
+    color: #ffffff;
+    background: #2f57ef;
+    box-shadow: 0 10px 28px rgba(47, 87, 239, 0.28);
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-input input {
+    border-color: #33415c;
+    color: #f8fafc;
+    background: #0e1628;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-input input::placeholder {
+    color: #7f8ba3;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-divider::before,
+.datalab-auth-page.active-dark-mode .datalab-auth-divider::after {
+    background: #33415c;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-message {
+    color: #fecaca;
+    background: #3f1821;
+}
+
+.datalab-auth-page.active-dark-mode .datalab-auth-message.is-success {
+    color: #a7f3d0;
+    background: #12372e;
+}
+
+.datalab-auth-stage {
+    width: min(1080px, 100%);
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(360px, 430px);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.datalab-auth-visual,
+.datalab-auth-card {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 30px 90px rgba(2, 6, 23, 0.35);
+}
+
+.datalab-auth-visual {
+    position: relative;
+    overflow: hidden;
+    min-height: 560px;
+    padding: 40px;
+    color: #fff;
+    background:
+        linear-gradient(150deg, rgba(15, 23, 49, 0.94), rgba(47, 87, 239, 0.70)),
+        url("../images/bg/bg-image-10.jpg") center/cover;
+}
+
+.datalab-auth-visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent, rgba(15, 23, 49, 0.58));
+    pointer-events: none;
+}
+
+.datalab-auth-visual > * {
+    position: relative;
+    z-index: 1;
+}
+
+.datalab-auth-brand img {
+    max-width: 210px;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.22));
+}
+
+.datalab-auth-copy {
+    margin-top: 70px;
+}
+
+.datalab-auth-copy .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 34px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.datalab-auth-copy h1 {
+    max-width: 540px;
+    margin: 18px 0 14px;
+    color: #fff;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.datalab-auth-copy p {
+    max-width: 520px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.datalab-auth-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 420px;
+    margin-top: 40px;
+}
+
+.datalab-auth-icon-grid span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 56px;
+    padding: 10px 14px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.13);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    font-weight: 800;
+    animation: datalabAuthFloat 5s ease-in-out infinite;
+}
+
+.datalab-auth-icon-grid span:nth-child(2) { animation-delay: 0.5s; }
+.datalab-auth-icon-grid span:nth-child(3) { animation-delay: 1s; }
+.datalab-auth-icon-grid span:nth-child(4) { animation-delay: 1.5s; }
+.datalab-auth-icon-grid span:nth-child(5) { animation-delay: 2s; }
+.datalab-auth-icon-grid span:nth-child(6) { animation-delay: 2.5s; }
+
+@keyframes datalabAuthFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.datalab-auth-card {
+    padding: 34px;
+}
+
+.datalab-auth-card-head {
+    text-align: center;
+}
+
+.datalab-auth-card-head img {
+    max-width: 210px;
+    margin-bottom: 18px;
+}
+
+.datalab-auth-card-head h2 {
+    margin: 0 0 8px;
+    font-size: 26px;
+}
+
+.datalab-auth-card-head p {
+    margin: 0 0 22px;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.datalab-auth-switch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 16px;
+    background: #eef2ff;
+}
+
+.datalab-auth-switch button {
+    min-height: 42px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: #64748b;
+    font-weight: 800;
+}
+
+.datalab-auth-switch button.is-active {
+    background: #fff;
+    color: #2f57ef;
+    box-shadow: 0 10px 28px rgba(47, 87, 239, 0.14);
+}
+
+.datalab-auth-google {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #fff;
+    color: #192335;
+    font-weight: 800;
+}
+
+.datalab-google-slot {
+    width: 100%;
+    height: 52px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.datalab-google-slot > div,
+.datalab-google-slot iframe {
+    max-width: 100% !important;
+    max-height: 48px !important;
+}
+
+.datalab-auth-google .google-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+    color: #4285f4;
+    background: #f8fafc;
+    font-weight: 900;
+}
+
+.datalab-auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.datalab-auth-divider::before,
+.datalab-auth-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #e2e8f0;
+}
+
+.datalab-auth-form {
+    display: grid;
+    gap: 14px;
+}
+
+.datalab-auth-form label {
+    display: grid;
+    gap: 8px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.datalab-auth-input {
+    position: relative;
+}
+
+.datalab-auth-input i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.datalab-auth-input input {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 0 14px 0 44px;
+    color: #192335;
+    background: #f8fafc;
+    font: inherit;
+    outline: none;
+}
+
+.datalab-auth-input input:focus {
+    border-color: #2f57ef;
+    box-shadow: 0 0 0 4px rgba(47, 87, 239, 0.12);
+}
+
+.datalab-auth-submit {
+    width: 100%;
+    min-height: 52px;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.datalab-auth-submit.is-loading {
+    opacity: 0.72;
+}
+
+.datalab-auth-message {
+    min-height: 42px;
+    margin: 14px 0 0;
+    padding: 11px 13px;
+    border-radius: 12px;
+    color: #b42318;
+    background: #fff1f0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.datalab-auth-message[hidden] {
+    display: none;
+}
+
+.datalab-auth-message.is-success {
+    color: #047857;
+    background: #ecfdf5;
+}
+
+.datalab-auth-footnote {
+    margin: 18px 0 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.45;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .datalab-auth-stage {
+        grid-template-columns: 1fr;
+    }
+
+    .datalab-auth-visual {
+        min-height: auto;
+    }
+
+    .datalab-auth-copy {
+        margin-top: 36px;
+    }
+
+    .datalab-auth-copy h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 575px) {
+    .datalab-auth-page {
+        padding: 14px;
+    }
+
+    .datalab-auth-theme-toggle {
+        top: 12px;
+        right: 12px;
+    }
+
+    .datalab-auth-card,
+    .datalab-auth-visual {
+        padding: 24px;
+        border-radius: 18px;
+    }
+
+    .datalab-auth-copy h1 {
+        font-size: 32px;
+    }
+
+    .datalab-auth-icon-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.datalab-auth-text-button {
+    justify-self: end;
+    padding: 0;
+    border: 0;
+    color: #315df5;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.datalab-auth-panel-title {
+    display: grid;
+    gap: 5px;
+    color: #667085;
+}
+
+.datalab-auth-panel-title strong {
+    color: #14213a;
+    font-size: 20px;
+}
+
+.datalab-auth-dev-link {
+    display: block;
+    margin-top: 12px;
+    color: #315df5;
+    font-weight: 700;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /my-account.html
+Disallow: /student-*
+Disallow: /instructor-*
+Disallow: /lesson-*
+Disallow: /quiz-*
+Disallow: /*?search=
+
+Sitemap: https://datalabacademy.az/sitemap.xml
