@@ -25,7 +25,7 @@ if (is_file(__DIR__ . '/config.local.php')) {
 
 defined('DB_HOST') || define('DB_HOST', getenv('DL_DB_HOST') ?: 'localhost');
 defined('DB_PORT') || define('DB_PORT', getenv('DL_DB_PORT') ?: '3306');
-defined('DB_NAME') || define('DB_NAME', getenv('DL_DB_NAME') ?: 'datalabacademy67_datalab_academy');
+defined('DB_NAME') || define('DB_NAME', getenv('DL_DB_NAME') ?: '');
 defined('DB_USER') || define('DB_USER', getenv('DL_DB_USER') ?: 'root');
 defined('DB_PASS') || define('DB_PASS', getenv('DL_DB_PASS') !== false ? getenv('DL_DB_PASS') : '');
 
