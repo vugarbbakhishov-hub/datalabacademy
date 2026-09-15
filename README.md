@@ -27,6 +27,12 @@ For the complete extensionless PHP routes and rewrite rules, use Apache (for exa
 
 Dynamic pages require a local MySQL/PDO configuration. Keep credentials and local configuration outside the public repository; database seed data is environment-specific.
 
-## Project notes
+## Licensing and third-party assets
 
-This is an evolving learning project. Before opening an issue or pull request, please check the repository guidance in [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md). Third-party assets and their notices remain subject to their original terms. This repository currently has no project-level license.
+The static demo pages and shared styles identify part of this repository as the **Histudy** education template and contain **RainbowIT** references. No project-level license file is present. Treat those template files, images, fonts and vendor assets as governed by their original terms; their presence here does not grant reuse rights.
+
+Project-specific DataLab code should be separated from those assets before a repository-wide open-source license is considered.
+
+## Contributing
+
+This is an evolving learning project. Before opening an issue or pull request, please check the repository guidance in [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md).
